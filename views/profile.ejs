@@ -7,11 +7,21 @@
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 	<style>
 		body 		{ padding-top:80px; word-wrap:break-word; }
+		.col-sm-2{
+			border: 1px solid black;
+			height: 350px;
+			margin-left: 5px;
+			width:250px;
+		}
+		.btn{
+			margin-top: 300px;
+			margin-left: 75px;
+		}
 	</style>
 </head>
 <body>
 <div class="container">
-
+<!--
 	<div class="page-header text-center">
 		<h1><span class="fa fa-anchor"></span> Profile Page</h1>
 		<a href="/logout" class="btn btn-default btn-sm">Logout</a>
@@ -19,7 +29,7 @@
 
 	<div class="row">
 
-		<!-- LOCAL INFORMATION -->
+
 		<div class="col-sm-6">
 			<div class="well">
 				<h3><span class="fa fa-user"></span> Local</h3>
@@ -27,13 +37,38 @@
 					<p>
 						<strong>id</strong>: <%= user._id %><br>
 						<strong>email</strong>: <%= user.local.email %><br>
-						<strong>password</strong>: <%= user.local.password %>
+						<strong>Username</strong>: <%= user.local.username %>
 					</p>
 
 			</div>
 		</div>
 
-	</div>
+	</div> -->
+<div class="bod">
+
+		<div class="col-sm-2">
+			<a href="/book"  class="btn btn-default">Book</a>
+		</div>
+
+		<div class="col-sm-2">
+
+		</div>
+
+		<div class="col-sm-2">
+
+		</div>
+
+		<div class="col-sm-2">
+
+		</div>
+
+
+
+
+</div>
+
+
+
 
 </div>
 </body>
