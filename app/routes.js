@@ -41,6 +41,14 @@ module.exports = function(app, passport) {
 		res.render('signupwork.ejs', { message: req.flash('signupMessage') });
 	});
 
+// render the book page
+	app.get('/book', function(req, res) {
+
+		// render the page and pass in any flash data if it exists
+		res.render('book.ejs', { message: req.flash('') });
+	});
+
+
 	// process the signup form
 	app.post('/signup', passport.authenticate('local-signup', {
 		successRedirect : '/profile', // redirect to the secure profile section
